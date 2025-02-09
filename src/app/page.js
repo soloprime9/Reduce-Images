@@ -170,7 +170,8 @@ const ImageResizer = () => {
           <h5>Is this tool really free?</h5>
           <p>Yes! 100% free with no registration required.</p>
         </div>
-        <!-- Add more FAQs -->
+
+        
       </div>
     </section>
     </div>
