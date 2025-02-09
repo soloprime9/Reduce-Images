@@ -138,10 +138,10 @@ const ImageResizer = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
-          <a href="/" className="text-gray-700 hover:text-green-600 transition-colors">Home</a>
-          <a href="#features" className="text-gray-700 hover:text-green-600 transition-colors">Features</a>
-          <a href="#faq" className="text-gray-700 hover:text-green-600 transition-colors">FAQ</a>
-          <a href="#tools" className="text-gray-700 hover:text-green-600 transition-colors">Tools</a>
+          <a href="https://reduceimages-sigma.vercel.app/" className="text-gray-700 hover:text-green-600 transition-colors">Home</a>
+          <a href="https://reduceimages-sigma.vercel.app/" className="text-gray-700 hover:text-green-600 transition-colors">Features</a>
+          <a href="https://reduceimages-sigma.vercel.app/" className="text-gray-700 hover:text-green-600 transition-colors">FAQ</a>
+          <a href="https://reduceimages-sigma.vercel.app/" className="text-gray-700 hover:text-green-600 transition-colors">Tools</a>
         </div>
 
         {/* Mobile Menu Button */}
