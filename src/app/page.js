@@ -100,6 +100,33 @@ const ImageResizer = () => {
     return `${(bytes / 1048576).toFixed(1)} MB`;
   };
 
+  const faqItems = [
+    { 
+      question: "Is this tool really free?", 
+      answer: "Yes! Our image resizer is 100% free with no hidden costs or registration required." 
+    },
+    { 
+      question: "How does image resizing work?", 
+      answer: "We use browser-based processing to resize images without uploading to servers, ensuring your files stay private." 
+    },
+    { 
+      question: "What image formats are supported?", 
+      answer: "We support JPG, PNG, GIF, BMP, WebP, and HEIC formats with more coming soon!" 
+    },
+    { 
+      question: "Will resizing affect image quality?", 
+      answer: "Our smart algorithms maintain optimal quality while reducing file size. Use the quality slider to control compression." 
+    },
+    { 
+      question: "Can I process multiple images at once?", 
+      answer: "Yes! Simply drag-and-drop multiple files or select them in the file picker." 
+    },
+    { 
+      question: "Is there any file size limit?", 
+      answer: "No limits! Process images of any size directly in your browser." 
+    }
+  ];
+
   return (
     <div>
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
@@ -159,74 +186,110 @@ const ImageResizer = () => {
       )}
         </div>
         
-        <section className="seo-content p-4 max-w-3xl mx-auto text-gray-800">
-      <h2 className="text-2xl font-bold mb-4">How to Reduce Image File Size Online</h2>
-      <p>Our free image resizer helps you optimize photos for various purposes:</p>
-      <ul className="list-disc pl-5 mb-4">
-        <li>Website performance improvement</li>
-        <li>Social media optimization</li>
-        <li>Email attachments</li>
-        <li>Document preparation</li>
-        <li>Faster loading times</li>
-      </ul>
-      
-      <h3 className="text-xl font-semibold mt-6 mb-2">Supported Formats</h3>
-      <p>JPG, PNG, GIF, BMP, WebP, and HEIC formats</p>
-      
-      <h3 className="text-xl font-semibold mt-6 mb-2">Key Features</h3>
-      <ul className="list-disc pl-5 mb-4">
-        <li>Drag-and-drop upload support</li>
-        <li>Adjustable compression levels</li>
-        <li>Batch processing for multiple images</li>
-        <li>Instant download without registration</li>
-      </ul>
-      
-      <div className="faq mt-8">
-        <h4 className="text-xl font-bold mb-3">Frequently Asked Questions (FAQ)</h4>
-        {[  
-          { question: "Is this tool really free?", answer: "Yes! 100% free with no registration required." },
-          { question: "Can I resize multiple images at once?", answer: "Yes, our batch processing feature allows you to upload and resize multiple images simultaneously." },
-          { question: "Does image quality reduce after compression?", answer: "No! Our tool optimizes images while maintaining high quality." },
-          { question: "What formats are supported?", answer: "We support JPG, PNG, GIF, BMP, WebP, and HEIC formats." }
-        ].map((faq, index) => (
-          <div key={index} className="question border-b py-3 cursor-pointer" onClick={() => toggleQuestion(index)}>
-            <h5 className="text-lg font-semibold flex justify-between">
-              {faq.question}
-              <span>{openQuestion === index ? "▲" : "▼"}</span>
-            </h5>
-            {openQuestion === index && <p className="mt-2">{faq.answer}</p>}
+         <section className="seo-content p-6 max-w-4xl mx-auto text-gray-800 bg-white shadow-sm rounded-lg mt-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Understanding Image File Sizes</h2>
+        
+        <div className="prose max-w-none">
+          <p className="text-lg mb-4">
+            Digital images are made of pixels - tiny color dots that combine to form your picture. Each pixel stores 
+            color information using RGB values, typically consuming 3 bytes per pixel. This means:
+          </p>
+
+          <div className="bg-blue-50 p-4 rounded-lg mb-6">
+            <h3 className="text-xl font-semibold mb-3">📐 Size Calculation Example:</h3>
+            <p>
+              A 10MP photo (10 million pixels) = 30MB storage (10M pixels × 3 bytes). 
+              Our tool helps reduce this size dramatically without quality loss!
+            </p>
           </div>
-        ))}
-      </div>
-      
-      {/* JSON-LD Schema for SEO */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SoftwareApplication",
-          "name": "Free Image Resizer",
-          "description": "A free online image resizer that allows you to compress, convert, and optimize images instantly.",
-          "applicationCategory": "Image Optimization Tools",
-          "operatingSystem": "All",
-          "offers": {
-            "@type": "Offer",
-            "price": "0.00",
-            "priceCurrency": "USD"
-          },
-          "featureList": [
-            "Multiple format support",
-            "Quality control",
-            "Batch processing",
-            "Instant download"
-          ],
-          "useCase": [
-            "Web Development",
-            "Social Media Management",
-            "Content Creation"
-          ]
-        })
-      }} />
-    </section>
+
+          <h3 className="text-2xl font-semibold mt-8 mb-4">How Our Image Reducer Works</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-4 rounded-lg border border-gray-200">
+              <h4 className="font-bold mb-2 text-green-600">Smart Compression</h4>
+              <p>Advanced algorithms remove unnecessary data while preserving visual quality</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg border border-gray-200">
+              <h4 className="font-bold mb-2 text-blue-600">Precise Resizing</h4>
+              <p>Maintain aspect ratio while scaling to optimal dimensions for web/mobile</p>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-semibold mt-8 mb-4">Optimization Guide</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-50">
+                  <th className="p-3 text-left">Use Case</th>
+                  <th className="p-3 text-left">Recommended Settings</th>
+                  <th className="p-3 text-left">Estimated Savings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t border-gray-200">
+                  <td className="p-3">Website Images</td>
+                  <td className="p-3">WebP format, 80% quality</td>
+                  <td className="p-3">60-80% smaller</td>
+                </tr>
+                <tr className="border-t border-gray-200">
+                  <td className="p-3">Social Media</td>
+                  <td className="p-3">JPG 90%, 2000px width</td>
+                  <td className="p-3">50-70% smaller</td>
+                </tr>
+                <tr className="border-t border-gray-200">
+                  <td className="p-3">Email Attachments</td>
+                  <td className="p-3">PNG 70%, 1200px width</td>
+                  <td className="p-3">40-60% smaller</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Enhanced FAQ Section */}
+        <div className="faq mt-12">
+          <h3 className="text-2xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h3>
+          <div className="space-y-4">
+            {faqItems.map((faq, index) => (
+              <div 
+                key={index} 
+                className={`border rounded-lg transition-all ${openQuestion === index ? 'border-green-300 bg-green-50' : 'border-gray-200 hover:border-green-200'}`}
+              >
+                <div 
+                  className="p-4 flex justify-between items-center cursor-pointer"
+                  onClick={() => toggleQuestion(index)}
+                >
+                  <h4 className="font-semibold text-gray-800">{faq.question}</h4>
+                  <span className={`transform transition-transform ${openQuestion === index ? 'rotate-180' : ''}`}>
+                    ▼
+                  </span>
+                </div>
+                {openQuestion === index && (
+                  <div className="p-4 pt-0 border-t border-gray-100">
+                    <p className="text-gray-600">{faq.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* SEO Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqItems.map(item => ({
+              "@type": "Question",
+              "name": item.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+              }
+            }))
+          })
+        }} />
+      </section>
         
     </div>
   );
