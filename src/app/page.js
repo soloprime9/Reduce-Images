@@ -157,7 +157,7 @@ const ImageResizer = () => {
   </header>
 
           
-    <div className="w-full p-10 pb-30 border-2 border-black mt-5 shadow-lg rounded-lg">
+    <div className="w-full p-10 pb-20 border-2 border-black mt-5 shadow-lg rounded-lg">
       <h1 className="text-2xl font-bold text-center mb-4">Image Size Reducer</h1>
       <div
         className={`border-2 border-dashed p-6 text-center cursor-pointer rounded-lg ${
