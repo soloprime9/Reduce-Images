@@ -151,7 +151,7 @@ const ImageResizer = () => {
           <button onClick={downloadImage} className="mt-4 bg-green-500 text-white px-4 py-2 rounded">Download Resized Image</button>
         </>
       )}
-
+        </div>
         <section className="seo-content p-4 max-w-3xl mx-auto text-gray-800">
       <h2 className="text-2xl font-bold mb-4">Optimize and Compress Images Online</h2>
       <p>Use our free image resizer to enhance performance and reduce file sizes effortlessly:</p>
@@ -222,7 +222,7 @@ const ImageResizer = () => {
         })
       }} />
     </section>
-        </div>
+        
     </div>
   );
 };
