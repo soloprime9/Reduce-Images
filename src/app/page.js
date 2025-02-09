@@ -144,6 +144,7 @@ const ImageResizer = () => {
             <div>
               <label>Format:</label>
               <select value={format} onChange={(e) => setFormat(e.target.value)} className="w-full p-2 border rounded">
+                <option value="jpg">JPG</option>
                 <option value="jpeg">JPEG</option>
                 <option value="png">PNG</option>
                 <option value="webp">WebP</option>
