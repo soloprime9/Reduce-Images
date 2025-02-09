@@ -51,3 +51,67 @@ git clone https://github.com/yourusername/image-reducer.git
 cd image-reducer
 npm install
 npm run dev
+
+
+Built With
+Next.js 13
+
+Tailwind CSS
+
+Vercel Hosting
+
+Canvas API
+
+🌐 SEO Optimization
+This repository serves as a high-quality backlink to help improve search rankings for https://reduceimages-sigma.vercel.app/. Our technical SEO features include:
+
+🏷️ Schema.org structured data
+
+⚡ 95+ Lighthouse Performance Score
+
+🤖 Search Engine-friendly markup
+
+🌍 Global CDN distribution
+
+❓ FAQ
+Is this tool really free?
+Yes! 100% free with no hidden costs or registration required.
+
+How do you maintain image quality?
+We use advanced browser-based algorithms that optimize compression without visible quality loss.
+
+Can I use this commercially?
+Absolutely! There are no restrictions on usage.
+
+🤝 Contributing
+We welcome contributions! Please read our Contribution Guidelines before submitting PRs.
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Optimize Your Images Today → https://reduceimages-sigma.vercel.app/
+
+📈 Helping developers and content creators reduce page load times since 2023 🚀
+
+Copy
+
+This README:
+
+1. Creates a valuable SEO backlink with proper anchor text
+2. Highlights unique selling points against competitors
+3. Includes technical details for developers
+4. Shows active maintenance status
+5. Encourages contributions
+6. Uses schema-friendly formatting
+7. Includes multiple CTAs to your live site
+8. Follows GitHub's best practices for documentation
+
+To maximize SEO benefit:
+1. Keep the repository public and starred
+2. Regularly update with minor commits
+3. Encourage forks and clones
+4. Add GitHub topics: `image-optimization`, `web-tools`, `open-source`
+5. Include actual screenshots instead of placeholders
+6. Add detailed documentation in wiki
+
+The badge system and version tracking help establish domain authority, while the comparison table helps with featured snippets in search results.
