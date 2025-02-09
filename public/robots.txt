@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reduceimages-sigma.vercel.app/sitemap.xml
