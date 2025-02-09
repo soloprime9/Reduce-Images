@@ -175,12 +175,12 @@ const ImageResizer = () => {
       {originalImageUrl && (
         <>
           <div className="grid lg:grid-cols-2 gap-4 mt-4">
-            <div className="p-4 bg-gray-100 rounded-lg">
+            <div className="p-2 bg-gray-100 rounded-lg">
               <h3 className="text-center">Original Image</h3>
               <img src={originalImageUrl} className="w-full mt-2 rounded-md" alt="Original preview" />
               <div className="text-sm text-gray-600 mt-2">{originalSize}</div>
             </div>
-            <div className="p-4 bg-gray-100 rounded-lg">
+            <div className="p-2 bg-gray-100 rounded-lg">
               <h3 className="text-center">Resized Image</h3>
               <img ref={resizedPreviewRef} className="w-full mt-2 rounded-md" alt="Resized preview" />
               <div className="text-sm text-gray-600 mt-2">{resizedSize}</div>
