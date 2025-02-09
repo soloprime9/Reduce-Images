@@ -11,6 +11,11 @@ const ImageResizer = () => {
   const [originalSize, setOriginalSize] = useState("");
   const [resizedSize, setResizedSize] = useState("");
   const [isDragging, setIsDragging] = useState(false);
+  const [openQuestion, setOpenQuestion] = useState(null);
+
+  const toggleQuestion = (index) => {
+    setOpenQuestion(openQuestion === index ? null : index);
+  };
 
   const fileInputRef = useRef(null);
   const resizedPreviewRef = useRef(null);
@@ -152,46 +157,45 @@ const ImageResizer = () => {
         </>
       )}
         </div>
+        
         <section className="seo-content p-4 max-w-3xl mx-auto text-gray-800">
-      <h2 className="text-2xl font-bold mb-4">Optimize and Compress Images Online</h2>
-      <p>Use our free image resizer to enhance performance and reduce file sizes effortlessly:</p>
+      <h2 className="text-2xl font-bold mb-4">How to Reduce Image File Size Online</h2>
+      <p>Our free image resizer helps you optimize photos for various purposes:</p>
       <ul className="list-disc pl-5 mb-4">
-        <li>Improve website load speed</li>
-        <li>Optimize images for social media</li>
-        <li>Reduce email attachment sizes</li>
-        <li>Prepare images for documents and reports</li>
-        <li>Faster file transfers</li>
+        <li>Website performance improvement</li>
+        <li>Social media optimization</li>
+        <li>Email attachments</li>
+        <li>Document preparation</li>
+        <li>Faster loading times</li>
       </ul>
       
-      <h3 className="text-xl font-semibold mt-6 mb-2">Supported Image Formats</h3>
-      <p>We support JPG, PNG, GIF, BMP, WebP, and HEIC formats.</p>
+      <h3 className="text-xl font-semibold mt-6 mb-2">Supported Formats</h3>
+      <p>JPG, PNG, GIF, BMP, WebP, and HEIC formats</p>
       
       <h3 className="text-xl font-semibold mt-6 mb-2">Key Features</h3>
       <ul className="list-disc pl-5 mb-4">
-        <li>Simple drag-and-drop upload</li>
-        <li>Customizable compression settings</li>
+        <li>Drag-and-drop upload support</li>
+        <li>Adjustable compression levels</li>
         <li>Batch processing for multiple images</li>
-        <li>Instant downloads with no sign-up required</li>
+        <li>Instant download without registration</li>
       </ul>
       
       <div className="faq mt-8">
         <h4 className="text-xl font-bold mb-3">Frequently Asked Questions (FAQ)</h4>
-        <div className="question border-b py-3">
-          <h5 className="text-lg font-semibold">Is this tool completely free?</h5>
-          <p>Yes! Our image resizer is 100% free with no hidden costs or registration required.</p>
-        </div>
-        <div className="question border-b py-3">
-          <h5 className="text-lg font-semibold">Can I compress multiple images at once?</h5>
-          <p>Absolutely! Our batch processing feature lets you upload and resize multiple images in one go.</p>
-        </div>
-        <div className="question border-b py-3">
-          <h5 className="text-lg font-semibold">Will my image lose quality after compression?</h5>
-          <p>No, our tool optimizes images while preserving high-quality resolution.</p>
-        </div>
-        <div className="question py-3">
-          <h5 className="text-lg font-semibold">Which formats does this tool support?</h5>
-          <p>We support JPG, PNG, GIF, BMP, WebP, and HEIC formats for maximum compatibility.</p>
-        </div>
+        {[  
+          { question: "Is this tool really free?", answer: "Yes! 100% free with no registration required." },
+          { question: "Can I resize multiple images at once?", answer: "Yes, our batch processing feature allows you to upload and resize multiple images simultaneously." },
+          { question: "Does image quality reduce after compression?", answer: "No! Our tool optimizes images while maintaining high quality." },
+          { question: "What formats are supported?", answer: "We support JPG, PNG, GIF, BMP, WebP, and HEIC formats." }
+        ].map((faq, index) => (
+          <div key={index} className="question border-b py-3 cursor-pointer" onClick={() => toggleQuestion(index)}>
+            <h5 className="text-lg font-semibold flex justify-between">
+              {faq.question}
+              <span>{openQuestion === index ? "▲" : "▼"}</span>
+            </h5>
+            {openQuestion === index && <p className="mt-2">{faq.answer}</p>}
+          </div>
+        ))}
       </div>
       
       {/* JSON-LD Schema for SEO */}
@@ -199,8 +203,8 @@ const ImageResizer = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          "name": "Online Image Compressor",
-          "description": "A free online tool to compress, resize, and optimize images for better performance.",
+          "name": "Free Image Resizer",
+          "description": "A free online image resizer that allows you to compress, convert, and optimize images instantly.",
           "applicationCategory": "Image Optimization Tools",
           "operatingSystem": "All",
           "offers": {
@@ -209,14 +213,14 @@ const ImageResizer = () => {
             "priceCurrency": "USD"
           },
           "featureList": [
-            "Supports multiple image formats",
-            "Adjustable compression settings",
-            "Batch image processing",
-            "Quick and easy downloads"
+            "Multiple format support",
+            "Quality control",
+            "Batch processing",
+            "Instant download"
           ],
           "useCase": [
             "Web Development",
-            "Social Media Optimization",
+            "Social Media Management",
             "Content Creation"
           ]
         })
