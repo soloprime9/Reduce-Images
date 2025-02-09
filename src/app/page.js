@@ -150,6 +150,29 @@ const ImageResizer = () => {
           <button onClick={downloadImage} className="mt-4 bg-green-500 text-white px-4 py-2 rounded">Download Resized Image</button>
         </>
       )}
+
+        <section className="seo-content mt-10">
+      <h2>How to Reduce Image File Size Online</h2>
+      <p>Our free image resizer helps you optimize photos for:</p>
+      <ul>
+        <li>Website performance improvement</li>
+        <li>Social media optimization</li>
+        <li>Email attachments</li>
+        <li>Document preparation</li>
+      </ul>
+      
+      <h3>Supported Formats</h3>
+      <p>JPG, PNG, GIF, BMP, and WebP formats</p>
+      
+      <div className="faq">
+        <h4>FAQ</h4>
+        <div className="question">
+          <h5>Is this tool really free?</h5>
+          <p>Yes! 100% free with no registration required.</p>
+        </div>
+        <!-- Add more FAQs -->
+      </div>
+    </section>
     </div>
   );
 };
