@@ -9,7 +9,7 @@ const YehRishtaUpdate = () => {
         className="w-full h-auto rounded-lg mb-4"
       />
       <h1 className="text-2xl font-bold text-center mb-4 text-gray-800">
-        Yeh Rishta Kya Kehlata Hai 11th February 2025 Written Update
+        Yeh Rishta Kya Kehlata Hai 12th February 2025 Written Update
       </h1>
       <p className="text-gray-700">
         In today’s episode, Pandit asks Vidya to perform the ritual. Kajal asks
