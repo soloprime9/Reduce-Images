@@ -4,7 +4,7 @@ const YehRishtaUpdate = () => {
   return (
     <div className="max-w-3xl mx-auto p-4 bg-white shadow-lg rounded-xl">
       <img 
-        src="/path-to-thumbnail.jpg" 
+        src="/image.webp" 
         alt="Yeh Rishta Kya Kehlata Hai 11th February 2025 Thumbnail" 
         className="w-full h-auto rounded-lg mb-4"
       />
