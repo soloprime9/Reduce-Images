@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useRef, useEffect } from "react";
+import Head from "next/head";
 
 const ImageResizer = () => {
   const [originalImage, setOriginalImage] = useState(null);
@@ -128,6 +129,11 @@ const ImageResizer = () => {
   ];
 
   return (
+    <>
+    <Head>
+        <title>Image Resizer - Reduce Image Size Online</title>
+        <meta name="description" content="Resize and compress images online with our free Image Resizer tool. Reduce image file size without losing quality." />
+      </Head>
     <div>
    
 
@@ -297,6 +303,7 @@ const ImageResizer = () => {
 
            
     </div>
+          </>
   );
 };
 
