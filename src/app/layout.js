@@ -22,7 +22,9 @@ export const metadata = {
     "online picture resizer",
     "web image compressor",
     "photo size reducer",
-    "social media image optimizer"
+    "social media image optimizer",
+    "reduceimages.com",
+    "resize images online - resize jpg, bmp, gif, png images"
   ].join(", "),
   openGraph: {
     title: "Free Image Resizer - Optimize Photos in Seconds",
