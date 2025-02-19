@@ -2,47 +2,40 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="about-container p-6 max-w-3xl mx-auto text-gray-800">
-      <h2 className="text-2xl font-bold mb-4">
-        Welcome to our website <b>Image Reducer</b>
-      </h2>
-      <p className="mb-4">
-        <b>Image Reducer</b> is a professional platform where we provide informative content like [Your Contents Type]. We hope you like all the content provided by us.
-      </p>
-      <p className="mb-4">
-        If you have additional questions or require more information about our website, do not hesitate to contact us through email at <b>imagereduce@gmail.com</b>.
+    <section className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <h3 className="text-2xl font-bold text-gray-800 mb-4">Welcome to Image Reducer</h3>
+      
+      <p className="text-gray-700 mb-4">
+        Hello! <strong>Image Reducer</strong> is a professional platform where we provide interesting and valuable content focused on 
+        <strong> Tools</strong>. We are committed to delivering high-quality, reliable, and insightful information. Our goal is to turn 
+        our passion for Tools into a thriving online resource.
       </p>
 
-      <h2 className="text-2xl font-bold mb-4">
-        About <b>Image Reducer</b>
-      </h2>
-      <p className="mb-4">
-        <b>Image Reducer</b> was founded in [date] by [Your Name]. Also, <b>Image Reducer</b> commits to replying to all people who subscribe to our YouTube Channel <a href="[channel link]" className="text-blue-600 underline">[channel link]</a> and follow our website. We hope you enjoy our services as much as we enjoy offering them to you.
-      </p>
-      <p className="mb-4">
-        Sincerely, <b>[Your Name]</b>
+      <p className="text-gray-700 mb-4">
+        We will continue to post such valuable and knowledgeable information on our website for all of you. Your love and support mean a lot to us.
       </p>
 
-      <h2 className="text-2xl font-bold mb-4">
-        Aim of <b>Image Reducer</b>
-      </h2>
-      <p className="mb-4">
-        Like any other website, <b>Image Reducer</b> aims to help viewers enhance their skills with our content. We will continue to provide helpful content for you.
-      </p>
-      <p className="mb-4">
-        Our About Us page was created with the help of the <a href="https://aboutuspagegenerate.blogspot.com/" className="text-blue-600 underline">About Us Generator Tool</a>.
-      </p>
-      <p className="mb-4">
-        We are a leading online learning platform, guiding viewers to identify their strengths and fill their learning gaps. We are working to turn our passion for <b>Image Reducer</b> into a growing online website.
-      </p>
-      <p className="mb-4">
-        If you have any questions or queries regarding our website, please don’t hesitate to contact us.
+      <p className="text-gray-700 mb-4">
+        We are dedicated to providing you with the very best insights and knowledge related to Tools. Our About Us page is generated with the help of the 
+        <a href="https://raptorkit.com/about-us-page-generator" target="_blank" rel="noopener noreferrer" className="text-yellow-500 hover:underline"> About Us Generator</a>.
       </p>
 
-      <h2 className="text-2xl font-bold mt-6">
-        Thanks For Visiting Our Site
-      </h2>
-    </div>
+      <p className="text-gray-700 mb-4">
+        We hope you find all of the information on <strong>Image Reducer</strong> helpful, as we love sharing it with you.
+      </p>
+
+      <p className="text-gray-700 mb-4">
+        <strong>Visit us at:</strong> 
+        <a href="https://reduceimages-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline"> https://reduceimages-sigma.vercel.app/</a>
+      </p>
+
+      <p className="text-gray-700 mb-4">
+        <strong>For any inquiries or further information, please feel free to contact us via email at:</strong> 
+        <a href="mailto:imagereduce@gmail.com" className="text-blue-500 hover:underline"> imagereduce@gmail.com</a>
+      </p>
+
+      <p className="text-gray-800 font-semibold">Thank you for visiting Image Reducer!</p>
+    </section>
   );
 }
 
