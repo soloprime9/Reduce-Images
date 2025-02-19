@@ -137,19 +137,19 @@ export default function RootLayout({ children }) {
         <div>
           <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Tools</h3>
           <ul className="mt-4 space-y-2">
-            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors">Image Compressor</a></li>
-            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors">PDF Tools</a></li>
-            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors">Video Converter</a></li>
+            <li><a href="https://reduceimages-sigma.vercel.app/" className="text-gray-600 hover:text-green-600 transition-colors">Image Reducer</a></li>
+            <li><a href="https://reduceimages-sigma.vercel.app/youtube-thumbnail-downloader" className="text-gray-600 hover:text-green-600 transition-colors">Youtube Thumbnail Downloader</a></li>
+            <li><a href="https://reduceimages-sigma.vercel.app/youtube-thumbnail-tester" className="text-gray-600 hover:text-green-600 transition-colors">Youtube Thumbnail Tester</a></li>
           </ul>
         </div>
 
         {/* Legal Column */}
         <div>
-          <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Legal</h3>
+          <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider">About Us</h3>
           <ul className="mt-4 space-y-2">
-            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors">Privacy</a></li>
-            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors">Terms</a></li>
-            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors">Cookie Policy</a></li>
+            <li><a href="https://reduceimages-sigma.vercel.app/privacy-policy" className="text-gray-600 hover:text-green-600 transition-colors">Privacy Policy</a></li>
+            <li><a href="https://reduceimages-sigma.vercel.app/about" className="text-gray-600 hover:text-green-600 transition-colors">About Us</a></li>
+            <li><a href="https://reduceimages-sigma.vercel.app/term-and-conditions" className="text-gray-600 hover:text-green-600 transition-colors">Terms and Conditions</a></li>
           </ul>
         </div>
 
