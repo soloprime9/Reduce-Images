@@ -99,9 +99,9 @@ export default function RootLayout({ children }) {
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
           <a href="https://reduceimages-sigma.vercel.app/" className="text-gray-700 hover:text-green-600 transition-colors">Home</a>
-          <a href="https://reduceimages-sigma.vercel.app/" className="text-gray-700 hover:text-green-600 transition-colors">Features</a>
-          <a href="https://reduceimages-sigma.vercel.app/" className="text-gray-700 hover:text-green-600 transition-colors">FAQ</a>
-          <a href="https://reduceimages-sigma.vercel.app/" className="text-gray-700 hover:text-green-600 transition-colors">Tools</a>
+          <a href="https://reduceimages-sigma.vercel.app/about" className="text-gray-700 hover:text-green-600 transition-colors">About Us</a>
+          <a href="https://reduceimages-sigma.vercel.app/privacy-policy" className="text-gray-700 hover:text-green-600 transition-colors">Privacy Policy</a>
+          <a href="https://reduceimages-sigma.vercel.app/terms-and-conditions" className="text-gray-700 hover:text-green-600 transition-colors">Terms and Conditions</a>
         </div>
 
         {/* Mobile Menu Button */}
