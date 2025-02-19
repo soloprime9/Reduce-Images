@@ -3,36 +3,7 @@ import React from 'react';
 function About() {
   return (
     <div className="about-container">
-      <h1>About Us</h1>
-      <p>Welcome to Reduce Images, your one-stop solution for image resizing and compression.</p>
-
-      <section className="mission-section">
-        <h2>Our Mission</h2>
-        <p>Our mission is to provide a fast, easy, and reliable way to resize and compress images, making it easier for you to share and upload your favorite photos.</p>
-      </section>
-
-      <section className="team-section">
-        <h2>Meet Our Team</h2>
-        <div className="team-member">
-          <img src="https://reduceimages-sigma.vercel.app/team-member-1.jpg" alt="Team Member 1" />
-          <h3>John Doe</h3>
-          <p>Founder and CEO</p>
-        </div>
-        <div className="team-member">
-          <img src="https://reduceimages-sigma.vercel.app/team-member-2.jpg" alt="Team Member 2" />
-          <h3>Jane Doe</h3>
-          <p>Co-Founder and CTO</p>
-        </div>
-      </section>
-
-      <section className="contact-section">
-        <h2>Get in Touch</h2>
-        <p>If you have any questions or feedback, please don't hesitate to contact us.</p>
-        <ul>
-          <li>Email: <a href="mailto:support@reduceimages.com">support@reduceimages.com</a></li>
-          <li>Twitter: <a href="https://twitter.com/reduceimages" target="_blank" rel="noopener noreferrer">@reduceimages</a></li>
-        </ul>
-      </section>
+      <div><h2>Welcome to our website <b>Image Reducer</b></h2> <p><b>Image Reducer</b>, is a professional platform where we provide informative content like [Your Contents Type]. We hope you like all the contents provided by us.</p><p>If you have additional questions or require more information about our website, do not hesitate to Contact through email at <b>imagereduce@gmail.com</b></p> <h2>About <b>Image Reducer</b></h2> <p> <b>Image Reducer</b> This website founded in [date] by [Your Name]. Also, <b>Image Reducer</b> commits to reply to all people who subscribe to the YouTube Channel [channel link] and Follow the our website. We hope you enjoy Our services as much as we enjoy offering them to you. Sincerely, [Your Name]</p><h2>Aim of <b>Image Reducer</b></h2><p>Like any other website, <b>Image Reducer</b> We want viewers to enhance their skills with the help of our contents. We will continue to provide helpful content to you like this.<p>Our About-us page was created with the help of the <a href="https://aboutuspagegenerate.blogspot.com/">About Us Generator Tool</a></p><p>We are a leading online learning platform, guiding viewers to identify their strengths and fill in their learning gaps.We are working to turn our passion of <b>Image Reducer</b> into a growing online website. If you have any question or query regarding our website, Please don't hesitate to contact us.</p><h2>Thanks For Visiting Our Site</h2></div>	
     </div>
   );
 }
