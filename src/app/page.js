@@ -221,7 +221,7 @@ const ImageResizer = () => {
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h4 className="font-bold mb-2 text-blue-600">Precise Resizing</h4>
               <p>Maintain aspect ratio while scaling to optimal dimensions for web/mobile</p>
-              <p><a href="fondpeace.com" target="_blank" rel="oopener noreferrer">For More Search Results You can Visit Here</p>
+              <p><a href="fondpeace.com" target="_blank" rel="oopener noreferrer">For More Search Results You can Visit Here</a></p>
             </div>
           </div>
 
