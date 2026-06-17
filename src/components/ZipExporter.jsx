@@ -1,6 +1,7 @@
+'use client'
 import React, { useState, useRef } from 'react';
 import JSZip from 'jszip';
-import { saveAs } from 'file-saver';
+import { saveAs } from 'file-saver'; 
 import { FolderUp, FileCheck, FileX, Archive, RefreshCw, Layers } from 'lucide-react';
 
 export default function ZipExporter() {
